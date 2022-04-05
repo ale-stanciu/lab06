@@ -115,26 +115,26 @@ void test_positiveSquares()
     assert(v[0] == square1);
 }
 
-/*
+
 void test_equalSequence()
 {
-    Square square1(1,3,0,0,3);
-    Square square2(2,3,0,0,3);
-    Square square3(3,-3,-5,0,4);
-    Square square4(4,9,0,9,0);
-    Square square5(5,9,0,4,0);
+    Square square1(1,5,5,7,8);
+    Square square2(2,5,5,7,8);
+    Square square3(3,9,0,4,0);
+    Square square4(1,5,5,6,8);
+    Square square5(2,5,3,7,8);
 
-    int nr = 5;
-    Square array[5] = {square1, square2, square3, square4, square5};
+    Repo repo;
 
-    int lmax = 0;
-    Square* equalSquares = new Square;
+    repo.add_square(square1);
+    repo.add_square(square2);
+    repo.add_square(square3);
+    repo.add_square(square4);
+    repo.add_square(square5);
 
-    equalSequence(nr, array, lmax, equalSquares);
+    vector <Square> v = equalSequence(repo);
 
-    assert(equalSquares[0].get_xA() == 3);
-    assert(equalSquares[0].get_yA() == 0);
-    assert(equalSquares[0].get_xC() == 0);
-    assert(equalSquares[0].get_yC() == 3);
+    assert(v.size()==2);
+    assert(v[0] == square1);
+    assert(v[1]==square2);
 }
-*/

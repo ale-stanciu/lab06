@@ -60,7 +60,7 @@ vector <Square> positiveSquares(Repo repo)
 
 
 vector <Square> equalSequence(Repo repo) {
-    int lc = 0, pc, pmax, lmax = 0,i;
+    int lc = 0, pc=0, pmax=0, lmax = 0,i;
     vector <Square> v = repo.get_all();
     vector <Square> v1 = {};
     for(i = 0; i < v.size()-1; i++) {

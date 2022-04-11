@@ -9,7 +9,7 @@ void test_getter_perimeter();
 void test_getter_area();
 void test_operations();
 void test_constructor2();
-//void test_positiveSquares();
+void test_positiveSquares();
 void test_biggestSquare();
 void test_equalSequence();
 

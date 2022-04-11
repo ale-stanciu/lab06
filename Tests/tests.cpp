@@ -12,9 +12,9 @@ void test_all()
     test_getter_area();
     test_operations();
     test_constructor2();
-    //test_positiveSquares();
+    test_positiveSquares();
     test_biggestSquare();
-    //test_equalSequence();
+    test_equalSequence();
 }
 
 
@@ -120,9 +120,10 @@ void test_equalSequence()
 {
     Square square1(1,5,5,7,8);
     Square square2(2,5,5,7,8);
-    Square square3(3,9,0,4,0);
-    Square square4(1,5,5,6,8);
-    Square square5(2,5,3,7,8);
+    Square square3(3,5,5,7,8);
+    Square square4(3,9,0,4,0);
+    Square square5(1,5,5,6,8);
+    Square square6(2,5,3,7,8);
 
     Repo repo;
 
@@ -131,10 +132,11 @@ void test_equalSequence()
     repo.add_square(square3);
     repo.add_square(square4);
     repo.add_square(square5);
+    repo.add_square(square6);
 
     vector <Square> v = equalSequence(repo);
 
-    assert(v.size()==2);
+    assert(v.size()==3);
     assert(v[0] == square1);
     assert(v[1]==square2);
 }
